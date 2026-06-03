@@ -16,4 +16,8 @@ jobs:
 
       - run: pip install mlflow==2.19.0 pandas scikit-learn
 
-      - run: python modelling.py
+      - run: |
+          ls
+          ls MLProject
+          cd MLProject
+          python modelling.py
