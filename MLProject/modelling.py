@@ -25,3 +25,5 @@ with mlflow.start_run():
     acc = accuracy_score(y_test, pred)
 
     print("Accuracy:", acc)
+
+    mlflow.sklearn.log_model(model, "model")
