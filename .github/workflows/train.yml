@@ -14,8 +14,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      - run: pip install mlflow pandas scikit-learn
+      - run: pip install mlflow==2.19.0 pandas scikit-learn
 
-      - run: |
-          cd MLProject
-          python modelling.py
+      - run: python modelling.py
