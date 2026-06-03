@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install MLflow
-        run: pip install mlflow
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-      - name: Run MLflow Training
-        run: mlflow run . --no-conda
+      - name: Run MLflow training
+        run: mlflow run . --env-manager=local
