@@ -1,7 +1,0 @@
-name: mlflow-ci
-
-conda_env: conda.yaml
-
-entry_points:
-  main:
-    command: "conda run -n mlflow-ci python modelling.py"
